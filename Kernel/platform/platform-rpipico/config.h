@@ -20,10 +20,15 @@
  *      CS  GPIO 5
  */
 
-#define CONFIG_RC2040
+#define CONFIG_MAKER_PI
 
-/* We have a GPIO interface */
+/* hdb1 */
+#define BOOTDEVICE 0x0012
+
+/* Enable GPIO interface */
 #define CONFIG_DEV_GPIO
+/* Enable audio interface */
+#define CONFIG_AUDIO
 /* Enable to make ^Z dump the inode table for debug */
 #undef CONFIG_IDUMP
 /* Enable to make ^A drop back into the monitor */

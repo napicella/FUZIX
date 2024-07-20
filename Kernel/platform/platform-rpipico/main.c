@@ -91,6 +91,7 @@ void syscall_handler(struct svc_frame* eh)
 
 int main(void)
 {
+    stdio_init_all();
     // early init to handle boot kernel messages
     devtty_early_init();
 

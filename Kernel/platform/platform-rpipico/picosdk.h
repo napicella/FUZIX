@@ -3,6 +3,7 @@
 
 #include <pico/platform.h>
 #include <hardware/gpio.h>
+#include <hardware/pwm.h>
 #include <hardware/regs/addressmap.h>
 #include "pico/stdlib.h"
 

@@ -29,6 +29,8 @@ add_executable(fuzix
 	devflash.c
 	devsdspi.c
 	devtty.c
+	devgpio.c
+	devaudio.c
 	elf.c 
 	main.c
 	misc.c
@@ -37,8 +39,8 @@ add_executable(fuzix
 	swapper.c
 	tricks.S
 	core1.c
-	devgpio.c
 	usbdescriptors.c
+	./audio/buzzer.c
 	../../dev/blkdev.c
 	../../dev/mbr.c
 	../../dev/devsd_discard.c
@@ -50,6 +52,7 @@ add_executable(fuzix
 	../../blk512.c
 	../../devio.c
 	../../devsys.c
+	../../audio.c
 	../../filesys.c
 	../../inode.c
 	../../kdata.c
@@ -78,6 +81,7 @@ target_link_libraries(fuzix
 	pico_multicore
 	hardware_flash
 	hardware_spi
+	hardware_pwm
 	tinyusb_device
 )
 
