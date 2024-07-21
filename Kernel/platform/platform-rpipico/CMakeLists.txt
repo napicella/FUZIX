@@ -40,7 +40,6 @@ add_executable(fuzix
 	tricks.S
 	core1.c
 	usbdescriptors.c
-	./audio/buzzer.c
 	../../dev/blkdev.c
 	../../dev/mbr.c
 	../../dev/devsd_discard.c
