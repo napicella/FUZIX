@@ -77,6 +77,7 @@ mknod rtc   20600 1029
 mknod sys   20644 1030
 mknod i2c   20600 1031
 mknod gpio  20600 1032
+mknod audio 20600 1088
 
 cd /
 bget ../../../Applications/util/init init
@@ -193,6 +194,8 @@ bget ../../../Applications/util/write
 bget ../../../Applications/util/xargs
 bget ../../../Applications/util/yes
 bget utils/picoctl
+bget utils/picogpio
+bget utils/picoaudio
 
 chmod 0755 banner
 chmod 0755 basename
@@ -282,6 +285,8 @@ chmod 0755 write
 chmod 0755 xargs
 chmod 0755 yes
 chmod 0755 picoctl
+chmod 0755 picogpio
+chmod 0755 picoaudio
 ln cp mv
 ln cp ln
 ln reboot halt
